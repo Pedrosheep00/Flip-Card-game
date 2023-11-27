@@ -6,13 +6,10 @@ import FlipCard from './FlipCard';
 
 const App = () => {
   // Array of image paths for the cards
-  const images = [
-    './images/1.jpg',
-    './images/2.jpg',
-    './images/3.jpg',
-    './images/4.jpeg',
-    './images/5.jpg',
-  ];
+  const images = useMemo(
+    () => ['./images/1.jpg', './images/2.jpg', './images/3.jpg', './images/4.jpeg', './images/5.jpg'],
+    []
+  );
 
   // Number of cards you want
   const totalCards = 16;
